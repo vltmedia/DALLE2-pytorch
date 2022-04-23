@@ -487,8 +487,8 @@ class DiffusionPrior(nn.Module):
         beta_schedule = "cosine",
     ):
         super().__init__()
-        assert isinstance(clip, CLIP)
-        freeze_model_and_make_eval_(clip)
+        # assert isinstance(clip, CLIP)
+        # freeze_model_and_make_eval_(clip)
         self.clip = clip
 
         self.net = net
